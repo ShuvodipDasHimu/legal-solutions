@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,90 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Poppins & Garamond Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- rgba(182, 140, 90, 1) -->
+   <script>
+
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'legal-primary': 'rgba(182, 140, 90, 1)',
+            'dark-1':'#111111',
+            'dark-2':'#414040',
+            'dark-3':'#707070',
+            'dark-4':'#A0A0A0',
+            'dark-5':'#CFCFCF',
+            'dark-6':'#E7E7E7',
+            'dark-7':'#F3F3F3',
+            'legal-primary-bg': 'rgba(231, 111, 81, 0.1)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .font-poppins {
+      font-family: "Poppins", serif;
+    }
+    .font-garamond {
+      font-family: "EB Garamond", serif;
+    }
+  </style>
 </head>
-<body>
+<body class="font-poppins">
   <!-- Header Section -->
-  <header></header>
+  <header class="md:container mx-auto">
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Cases</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+           <img class="" src="./images/logo2.png" alt="">
+        </div>
+        <div class="hidden breadcrumbs md:hidden lg:text-lg w-1/2 lg:inline-flex">
+          <ul class="text-dark-3">
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Cases</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-legal-primary text-white font-semibold sm:text-sm md:text-md lg:text-lg md:h-16 md:w-56">Free Consultation</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <!-- Main Section -->
   <main></main>
